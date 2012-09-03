@@ -1,5 +1,5 @@
 module Stateflow
-  class IncorrectTransition < Exception; end
+  class IncorrectTransition < StandardError; end
   
   class Transition
     attr_reader :from, :to, :if, :decide

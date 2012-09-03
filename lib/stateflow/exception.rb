@@ -1,5 +1,5 @@
 module Stateflow
-  class NoTransitionFound < Exception; end
-  class NoStateFound < Exception; end
-  class NoEventFound < Exception; end
+  class NoTransitionFound < StandardError; end
+  class NoStateFound < StandardError; end
+  class NoEventFound < StandardError; end
 end
